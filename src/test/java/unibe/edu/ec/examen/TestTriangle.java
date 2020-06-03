@@ -11,16 +11,20 @@ public class TestTriangle {
 
 	@Before
 	public void before() {
-		this.triangle = new Triangle(3);
+		this.triangle = new Triangle(3.0);
 	}
 
 	@Test
 	public void testcalculatePerimeter() {
-		assertEquals(9, triangle.calculatePerimeter(), 0.10);
+		assertEquals(9.0, triangle.calculatePerimeter(), 0.10);
 	}
 
 	@Test
 	public void testcalculateArea() {
-		assertEquals(15, triangle.calculateArea(10), 0.10);
+		assertEquals(15.0, triangle.calculateArea(10.0), 0.10);
+	}
+	@Test
+	public void testcalculateVolum() {
+		assertEquals(30.0, triangle.calculateVolum(3.0, 10.0), 0.10);
 	}
 }

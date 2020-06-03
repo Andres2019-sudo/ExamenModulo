@@ -1,28 +1,32 @@
 package unibe.edu.ec.examen;
 
 public class Triangle {
-	private int side;
+	private double side;
 
-	public Triangle(int side) {
+	public Triangle(double side) {
 		super();
 		this.side = side;
 	}
 
-	public int getSide() {
+	public double getSide() {
 		return side;
 	}
 
-	public void setSide(int side) {
+	public void setSide(double side) {
 		this.side = side;
 	}
 
-	public int calculatePerimeter() {
-		int perimeter = side + side + side;
+	public double calculatePerimeter() {
+		double perimeter = side + side + side;
 		return perimeter;
 	}
 
-	public int calculateArea(int height) {
-		int area = (side * height) / 2;
+	public double calculateArea(double height) {
+		double area = (side * height) / 2;
 		return area;
+	}
+	public double calculateVolum(double sidebase, double height) {
+		double volum= sidebase*sidebase*height*1/3;
+		return volum;
 	}
 }
