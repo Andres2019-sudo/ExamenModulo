@@ -15,9 +15,14 @@ public class Triangle {
 	public void setSide(int side) {
 		this.side = side;
 	}
-	
+
 	public int calculatePerimeter() {
-		int perimeter= side+side+side;
+		int perimeter = side + side + side;
 		return perimeter;
+	}
+
+	public int calculateArea(int height) {
+		int area = (side * height) / 2;
+		return area;
 	}
 }
