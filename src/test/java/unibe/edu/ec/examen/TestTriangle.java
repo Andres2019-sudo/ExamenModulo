@@ -25,6 +25,6 @@ public class TestTriangle {
 	}
 	@Test
 	public void testcalculateVolum() {
-		assertEquals(53.3, triangle.calculateVolum(4.0, 10.0), 0.10);
+		assertEquals(30.0, triangle.calculateVolum(3.0, 10.0), 0.10);
 	}
 }
