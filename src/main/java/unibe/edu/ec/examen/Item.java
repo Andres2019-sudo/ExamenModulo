@@ -43,6 +43,6 @@ public class Item {
 	public double getRealTax(double quantity) {
 		return tax = quantity * this.tax * this.product.getPrice();
 
-	}
+	}	
 
 }
